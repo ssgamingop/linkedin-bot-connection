@@ -87,9 +87,9 @@ class LinkedInBot:
                         requests_sent += 1
                         print(f"Connection request sent: {requests_sent}/{n_requests}")
                         
-                        # Human-like delay to avoid flagging
-                        time.sleep(random.uniform(2, 5))
                         
+                        time.sleep(random.uniform(2, 5))
+                    
                     except Exception as e:
                         # Sometimes elements move or become stale, just skip them
                         continue
